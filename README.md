@@ -58,7 +58,7 @@ MYSQL (DATABASE)
 ![image](https://user-images.githubusercontent.com/88584119/156887658-39ca346f-fb31-407b-90e5-dd4c2369379e.png)
 
 
-LINK TERKAIT YOTUBE @Programming Maklon
+LINK YOUTUBE @Programming Maklon
 
 Link CRUD_Management_System_Travel_Notes : https://youtu.be/w2ILFd5SI8E
 
