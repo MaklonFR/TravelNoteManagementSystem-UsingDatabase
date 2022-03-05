@@ -9,7 +9,7 @@ Langkah - Langkah menggunakannya:
 3. Import Database **pelindung.sql**() pada Database yang dibuat di PHPMYADMIN
 3. Copy dan paste folder **CRUD_Management_System_Travel_Notes_Using_PHP_MYSQL_JAVASCRIPT** pada Folder C://xampp/htdocs
 4. Jalankan pada Web browser (chrome, firefox, dll)
-5. Link Pelanggan: localhost/CRUD_Management_System_Travel_Notes_Using_PHP_MYSQL_JAVASCRIPT/
+5. Link index: localhost/CRUD_Management_System_Travel_Notes_Using_PHP_MYSQL_JAVASCRIPT/
 6. Selamat mencoba!
 
 **SOFTWARE REQUIREMENT**
