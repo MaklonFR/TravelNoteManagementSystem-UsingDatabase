@@ -23,7 +23,7 @@
     <!--HEADER (BAGIAN ATAS)-->
     <header class="header mb-2">
       <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow ">
-        <a class="sidebar-toggler text-gray-500 me-4 me-lg-5 lead">
+        <a href="index.php?#" class="sidebar-toggler text-gray-500 me-4 me-lg-5 lead">
           <img class="avatar avatar-sm p-7 me-2" src="img/logo.png">PEDULI DIRI
         </a>
         <ul class="ms-auto d-flex align-items-center list-unstyled mb-0">
@@ -164,6 +164,21 @@
       {
         $.ajax({
           url:"page/input_data.php",
+          method:"GET",
+          data:{},
+          success:function(data)
+          {
+            /*Tampilkan Data Home berdasarkan nama ID (#) DIV*/
+            $("#data_tampil").html(data).refresh;
+          }
+        });
+       }
+
+        /* FUNGSI TAMPILKAN LAPORAN CATATAN PERJALANAN*/
+        function show_laporan()
+      {
+        $.ajax({
+          url:"page/laporan.php",
           method:"GET",
           data:{},
           success:function(data)

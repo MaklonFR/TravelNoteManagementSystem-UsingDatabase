@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/custom.0a822280.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png">
+
   </head>
   <body>
     <!--HEADER (BAGIAN ATAS)-->

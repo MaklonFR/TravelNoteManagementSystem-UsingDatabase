@@ -8,21 +8,23 @@
            <div class="col-lg-8 mb-5">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-heading text-center">DATA PERJALANAN</h4>
+                <h2 class="text-center">LAPORAN PERJALANAN</h2>
               </div>
               <div style="overflow-x:auto;" class="card-body"> 
-              <label class="col-md-9 form-label">Cari dengan tanggal atau suhu tubuh:</label>
-              <div class="row d-flex justify-content-between">
-              <div class="col-lg-4">
+               <label class="col-md-9 form-label">Cari dengan tanggal atau suhu tubuh:</label>
+               <div class="row d-flex justify-content-between">
+                <div class="col-lg-4">
                   <input class="form-control" name="cari" id="cari"
                   type="text" placeholder="Ketik disini untuk pencarian..">
-               </div>
-               <div class="col-lg-2">
-               <button class="btn btn-primary px-4" id="lap" onclick="show_laporan();" type="button">Laporan</button> 
-               </div>
-              </div>   
-                <input id="id" name="id" value="<?php echo $user["nik"] ?>" hidden>                   
-                <table class="table table-striped table-hover card-text">
+                </div>
+                <div class="col-lg-2">
+                  <button class="btn btn-success px-4" id="cetak" type="button">Cetak Laporan</button> 
+                </div>
+              </div>
+                       
+                <input id="id" name="id" value="<?php echo $user["nik"] ?>" hidden>  
+                <div id="section-to-print">                 
+                <table class="table table-striped table-hover card-text" id="print_tb">
                   <thead>
                     <tr>
                       <th>Tanggal </th>
@@ -30,7 +32,7 @@
                       <th>Alamat </th>
                       <th>Lokasi Tujuan</th>
                       <th>Suhu</th>
-                      <th class="text-center">Aksi</th>
+                      <th class="text-center">Waktu pengisian</th>
                     </tr>
                   </thead>
                   
@@ -38,7 +40,8 @@
 
                     </tbody>
                   
-                </table>
+                  </table>
+                </div>
               </div>
             </div>
            </div>
@@ -47,7 +50,17 @@
 
 <script type="text/javascript"> 
   $(document).ready(function() {
+   
+    /* CETAK LAPORAN */
+    $('#cetak').click(function(){
+      $('#cetak').hide();
+      $('#cari').hide();
+      $('.form-label').hide();
+      $('#menubar').hide();
+      window.print();
+    }); 
 
+    /* PENCARIAN */
     $('input[name="cari"]').keyup(function(){ 
 	    	var searchterm = $(this).val();
 			
@@ -70,7 +83,7 @@
   {
     var id  = $("#id").val();
     $.ajax({
-      url     : "crud/show_catatan.php",
+      url     : "crud/show_laporan.php",
       method  : "POST",
       data    : { 
                   id:id
@@ -83,48 +96,4 @@
       });
   }
 
-  function ubah_data(id) {
-    //alert(id);
-    $.ajax({
-      url     : "page/update_data.php",
-      method  : "POST",
-      data    : { 
-                  id:id
-                },
-        success:function (data) {
-        //alert(data); return;
-        $("#data_tampil").html(data).refresh;
-        }
-        
-      });
-  }
-
-  function hapus_data(id) {
-   //alert(id);
-    $.ajax({
-      url     : "crud/delete.php",
-      method  : "POST",
-      data    : { 
-                  id:id
-                },
-        success:function (data) {
-          //alert(data); return;
-          if (data=="OK")
-          {
-            alert("Delete Successfuly!");
-            tampil_catatan();
-          }   else 
-          if (data=="ERROR")
-           {
-            document.getElementById("fadd").reset();
-            alert("Add Error!");
-           }
-       }
-        
-      });
-  }
-
-
-
-
- </script>
+  </script>
