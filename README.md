@@ -31,6 +31,11 @@ JAVASCRIPT (JQUERY & AJAX)
 PHP
 MYSQL (DATABASE)
 
+**Flowchart System**
+
+![Flowchart_Login](https://user-images.githubusercontent.com/88584119/158187681-a2f71485-4e4e-40d8-a0ab-6d347c54b9cd.jpg)
+
+
 **Screenshot Web Application**
 
 1.  TAMPILAN LOGIN
