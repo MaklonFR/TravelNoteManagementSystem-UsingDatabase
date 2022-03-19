@@ -65,13 +65,7 @@ MYSQL (DATABASE)
 
 LINK YOUTUBE @Programming Maklon
 
-Link CRUD_Management_System_Travel_Notes : https://youtu.be/w2ILFd5SI8E
-
-Link Video Paket 1: https://www.youtube.com/watch?v=Jtm421uE-C8
-
-Link Video Paket 2: https://www.youtube.com/watch?v=TbxfLpClMkQ&t=7s
-
-Link Video Paket 3: https://www.youtube.com/watch?v=0rS_Ym5-u8U
+LINK Tutorial Youtube: https://www.youtube.com/channel/UCmIL-UoO0RNQBHPrsbBTJmw
 
 
   
