@@ -15,12 +15,12 @@ if(isset($_POST['nik'])!==null)
     VALUES ('$nik','$password', '$nama','$today')";			
     if($conn->query($sql) == 1)
     {
-     $data = "Add successfully!";
+     $data = "OK";
      echo $data;               
       }
       else
         {
-          $data = "Add Error!";
+          $data = "ERROR";
         echo $data;
         }
  }

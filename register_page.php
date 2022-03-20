@@ -71,11 +71,12 @@
       method  : "POST",
       data    : { nik:nik, password:password, nama:nama },
         success:function (data) {
-        alert(data); return;
+        //alert(data); return;
         if (data=="OK")
         {
           document.getElementById("flogin_regis").reset();
           alert("Register Successfuly!");
+          window.location.href="index.php"; 
         } else 
         if (data=="ERROR")
         {
