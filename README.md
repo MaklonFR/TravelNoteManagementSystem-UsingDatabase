@@ -62,7 +62,7 @@ MYSQL (DATABASE)
 ![image](https://user-images.githubusercontent.com/88584119/156887658-39ca346f-fb31-407b-90e5-dd4c2369379e.png)
 
 
-LINK YOUTUBE @Programming Maklon
+LINK YOUTUBE @MaklonFR
 
 LINK Tutorial Youtube: https://www.youtube.com/channel/UCmIL-UoO0RNQBHPrsbBTJmw
 
