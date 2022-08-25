@@ -1,4 +1,3 @@
-Crud Management System Using PHP, MYSQL (Backend) and HTML, CSS (Bootsrap v 5.0), JAVASCRIPT (JQUERY AJAX)
 Uji Kompetensi Keahlian Rekayasa Perangkat Lunak Paket 1 Menggunakan Database Tahun 2022
 **Aplikasi Catatan Perjalanan (Travel Notes)**
 
